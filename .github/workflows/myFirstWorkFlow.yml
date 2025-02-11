@@ -4,6 +4,8 @@ jobs:
     FirstJob:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout
+              uses: actions/checkout@v4
             - name: prints hello 
               run: echo "Hello"
             - name: list the contents of the repo

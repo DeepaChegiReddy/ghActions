@@ -1,0 +1,10 @@
+name: FirstWorkFlow
+on: push
+jobs:
+    FirstJob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: prints hello 
+              run: echo "Hello"
+            - name: list the contents of the repo
+              run: ls
